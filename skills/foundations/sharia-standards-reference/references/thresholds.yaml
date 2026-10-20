@@ -1,0 +1,181 @@
+# Shared screening thresholds for the sharia skills pack.
+# This file is the single source of truth. Skills MUST read it rather than
+# restating numbers in prose, so the pack cannot drift into self-contradiction.
+
+meta:
+  as_of: 2026-10-20
+  verify_before_use: true
+  notice: >
+    These values summarise publicly published standards. Standards are revised,
+    and some index methodologies are only partly public or are licensed. Re-verify
+    against the current edition before issuing a real verdict, and cite the edition
+    and date in the output. When a value is marked confidence: medium, say so.
+  precedence:
+    - client_mandate
+    - local_regulator
+    - chosen_index_provider
+    - aaoifi_default
+  verdict_vocabulary:
+    - compliant
+    - non_compliant
+    - questionable
+    - insufficient_data
+
+non_permissible_activities:
+  consensus:
+    - conventional_banking
+    - conventional_insurance
+    - interest_based_lending
+    - gambling_and_betting
+    - alcohol_production_or_distribution
+    - pork_and_derivatives
+    - pornography
+    - adult_entertainment
+    - conventional_derivatives_trading
+  disputed:
+    - tobacco
+    - weapons_and_defence
+    - music_and_streaming
+    - hotels_serving_alcohol
+    - cinema
+    - conventional_advertising
+    - crypto_exchange
+    - interest_income_below_threshold  # treated as impure, not disqualifying
+  note: >
+    A disputed line item is not a veto. Record it, apply the chosen standard's
+    treatment, and surface the disagreement in the report.
+
+standards:
+  aaoifi:
+    label: AAOIFI Shariah Standard No. 21 (financial paper, shares and similar)
+    confidence: high
+    financial_ratios:
+      - id: non_permissible_revenue
+        formula: non_permissible_revenue / total_revenue
+        max: 0.05
+        basis: revenue
+      - id: interest_bearing_debt
+        formula: interest_bearing_debt / market_cap
+        max: 0.30
+        basis: market_cap
+        alt_basis: total_assets
+        note: Some adopters apply the ratio to total assets instead of market cap.
+      - id: cash_and_interest_securities
+        formula: (cash + interest_bearing_securities) / total_assets
+        max: 0.70
+        basis: total_assets
+    purification:
+      basis: non_permissible_revenue / total_revenue
+      applied_to: dividend
+
+  dsn_mui:
+    label: DSN-MUI Fatwa No. 80/2011 (trading of equity securities)
+    confidence: high
+    jurisdiction: Indonesia
+    financial_ratios:
+      - id: interest_based_debt
+        formula: interest_based_debt / total_assets
+        max: 0.45
+        basis: total_assets
+      - id: interest_income
+        formula: interest_income / total_revenue
+        max: 0.10
+        basis: revenue
+    purification:
+      basis: interest_income / total_revenue
+      applied_to: dividend
+    note: >
+      Business-activity screen is qualitative: the issuer must not conduct a
+      business contrary to sharia principles. Index implementers (ISSI) apply
+      additional liquidity and reporting filters that are not part of the fatwa.
+
+  msci_islamic:
+    label: MSCI Islamic Index Series methodology
+    confidence: medium
+    financial_ratios:
+      - id: total_debt
+        formula: total_debt / total_assets
+        max: 0.3333
+      - id: cash_and_interest_securities
+        formula: (cash + interest_bearing_securities) / total_assets
+        max: 0.3333
+      - id: receivables_and_cash
+        formula: (accounts_receivable + cash) / total_assets
+        max: 0.3333
+      - id: non_permissible_revenue
+        formula: non_permissible_revenue / total_revenue
+        max: 0.05
+    purification:
+      basis: non_permissible_revenue / total_revenue
+      applied_to: dividend
+
+  djim:
+    label: Dow Jones Islamic Market Index methodology
+    confidence: medium
+    financial_ratios:
+      - id: total_debt
+        formula: total_debt / avg_market_cap_24m
+        max: 0.33
+      - id: cash_and_interest_securities
+        formula: (cash + interest_bearing_securities) / avg_market_cap_24m
+        max: 0.33
+      - id: accounts_receivable
+        formula: accounts_receivable / avg_market_cap_24m
+        max: 0.33
+      - id: non_permissible_revenue_ex_interest
+        formula: non_permissible_revenue_ex_interest / total_revenue
+        max: 0.05
+      - id: non_permissible_revenue_incl_interest
+        formula: total_non_permissible_revenue / total_revenue
+        max: 0.10
+    purification:
+      basis: non_permissible_revenue / total_revenue
+      applied_to: dividend
+
+  ftse_shariah:
+    label: FTSE Shariah Global Equity Index Series
+    confidence: medium
+    financial_ratios:
+      - id: total_debt
+        formula: total_debt / total_assets
+        max: 0.3333
+      - id: cash_and_interest_securities
+        formula: (cash + interest_bearing_securities) / total_assets
+        max: 0.3333
+      - id: receivables_and_cash
+        formula: (accounts_receivable + cash) / total_assets
+        max: 0.50
+      - id: non_permissible_revenue
+        formula: non_permissible_revenue / total_revenue
+        max: 0.05
+    purification:
+      basis: non_permissible_revenue / total_revenue
+      applied_to: dividend
+
+  sc_malaysia_sac:
+    label: Securities Commission Malaysia, Shariah Advisory Council
+    confidence: medium
+    jurisdiction: Malaysia
+    activity_benchmarks:
+      - tier: food_and_beverage
+        max_non_permissible: 0.05
+      - tier: general
+        max_non_permissible: 0.20
+    financial_ratios:
+      - id: interest_bearing_debt
+        formula: interest_bearing_debt / total_assets
+        max: 0.33
+    purification:
+      basis: non_permissible_revenue / total_revenue
+      applied_to: dividend
+
+zakat_defaults:
+  nisab_gold_grams: 85
+  nisab_silver_grams: 595
+  preferred_nisab: silver
+  rate: 0.025
+  hawl_days: 354
+  note: >
+    Jurisdictions and scholars differ on gold vs silver nisab. Silver is lower and
+    therefore more inclusive; prefer it for cash and financial assets unless the
+    user's local authority specifies otherwise.

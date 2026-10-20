@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Compliance Report"
+  short_description: "Assemble an auditable compliance report with verdicts, ratio tables, dissent, and limits."

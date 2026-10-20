@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Purification"
+  short_description: "Compute the purification amount on dividends from compliant holdings with impure income."

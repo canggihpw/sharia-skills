@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Sukuk Analysis"
+  short_description: "Test sukuk structures: asset backing, true sale, risk transfer, guarantees, and tradability."

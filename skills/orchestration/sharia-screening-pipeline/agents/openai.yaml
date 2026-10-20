@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Screening Pipeline"
+  short_description: "Run the pack end to end across a universe: frozen parameters, batched evidence, drift flags, report."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Zakat"
+  short_description: "Calculate zakat on cash, gold, stocks, inventory, and receivables with nisab and hawl."

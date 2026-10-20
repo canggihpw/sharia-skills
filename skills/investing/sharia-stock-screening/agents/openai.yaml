@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Stock Screening"
+  short_description: "Screen a listed equity: business activity first, then financial ratios under a named standard."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Bank Product"
+  short_description: "Verify an Islamic bank product: akad, ownership sequence, fees, penalties, and fatwa backing."

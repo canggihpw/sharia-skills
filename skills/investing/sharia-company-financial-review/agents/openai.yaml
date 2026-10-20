@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Financial Review"
+  short_description: "Extract and validate screening inputs from annual reports: debt, interest income, cash, revenue."

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Portfolio"
+  short_description: "Build and rebalance a compliant portfolio: universe, weights, drift triggers, purification ledger."

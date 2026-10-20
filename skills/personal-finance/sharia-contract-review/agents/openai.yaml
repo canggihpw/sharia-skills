@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Contract Review"
+  short_description: "Audit an akad: classify the contract, trace ownership and risk, flag clauses that recreate a loan."
