@@ -55,6 +55,19 @@ ambiguous, name the ambiguity rather than picking silently.
 | Sharia supervisory board | dewan pengawas syariah (DPS) | Institutional oversight |
 | Sukuk | sukuk / obligasi syariah | Asset-backed certificate |
 
+## Household and family finance
+
+| English | Arabic | Indonesian | Meaning |
+|---|---|---|---|
+| Maintenance / support | nafkah | nafkah | The husband's obligation to provide food, housing, clothing, health, and necessities at the ma'ruf standard |
+| Spousal property separation | infishal al-maliyah | infishal al-maliyah | Separate ownership of each spouse's property; the wife's income remains entirely hers |
+| Maintenance responsibility | qawwam | qawwam | The husband's duty to maintain and protect the family; it does not give him ownership of the wife's wealth |
+| Reasonable / customary standard | ma'ruf | ma'ruf | The standard a community recognises as reasonable for maintenance, neither stingy nor extravagant |
+| Voluntary spousal support | i'anah | i'anah | A wife's voluntary contribution to household costs; it is sadaqah, not an obligation |
+| Extravagance / waste | israf | israf | Spending beyond need or proportion, including lifestyle creep |
+| Complementary needs | hajiyyat | hajiyyat | Needs that remove hardship but rank below the essentials |
+| Essentials / necessities | daruriyyat | daruriyyat | The essential interests the law protects: religion, life, intellect, lineage, and wealth |
+
 ## Terms that are commonly mistranslated
 
 - **Syariah / sharia / shari'ah** — same word. Pick `sharia` in English prose,

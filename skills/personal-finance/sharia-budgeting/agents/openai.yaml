@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Budgeting"
+  short_description: "Allocate household income by sharia priority: nafkah, zakat, resilience, investment, infaq, and spillover rules."

@@ -207,3 +207,82 @@ zakat_defaults:
     note: >
       BAZNAS uses gold, not silver, for income zakat. This overrides the silver
       default for Indonesian users. The rupiah figure is reset annually.
+
+budgeting_defaults:
+  status: heuristic
+  notice: >
+    These are planning defaults, not fiqh rulings. Use them as starting points
+    for a household allocation, label them as heuristic, and let a local
+    authority, the household's actual obligations, or a scholar's guidance
+    override them. Percentages are shares of net monthly income, not gross.
+  basis: net_monthly_income
+  authority_default: user_supplied_or_local_ulama
+  nafkah_benchmark:
+    source: user_supplied_or_local_authority
+    note: >
+      Do not hardcode a currency minimum for nafkah. Use a published local
+      benchmark (for example a provincial minimum wage or a fatwa body's
+      guidance) only as a dated reference point; the household's dependants and
+      actual obligations set the floor.
+  tiers:
+    - id: syari_obligations
+      label: Syar'i obligations
+      degree: wajib
+      floor: actual_obligation
+      cap: null
+      review_above_pct: 0.35
+      note: >
+        Zakat, support for parents, and halal debt instalments. Zakat is
+        computed on wealth, not income; reserve the monthly accrual here and
+        compute it with the zakat skill.
+    - id: family_nafkah
+      label: Family nafkah
+      degree: wajib_fardhu_ain_husband
+      floor_pct: 0.40
+      cap_pct: 0.60
+    - id: resilience
+      label: Financial resilience
+      degree: wajib_konseptual
+      floor_pct: 0.10
+      cap_pct: 0.20
+      emergency_fund_months_floor: 3
+      emergency_fund_months_target: 6
+    - id: long_term_investment
+      label: Long-term investment
+      degree: sunnah_hajiyyat
+      floor_pct: 0.05
+      cap_pct: 0.30
+    - id: infaq_and_worship
+      label: Infaq and worship goals
+      degree: sunnah
+      floor_pct: 0.025
+      cap_pct: 0.10
+    - id: lifestyle
+      label: Lifestyle and recreation
+      degree: mubah
+      floor_pct: 0.0
+      cap_pct: 0.30
+  spillover:
+    order:
+      - fill_any_under_floor
+      - resilience
+      - long_term_investment
+      - infaq_and_worship
+      - named_surplus_bucket
+      - lifestyle_by_explicit_opt_in
+    default_destination: long_term_investment
+    note: >
+      Surplus from a capped category moves down this order automatically. It
+      must never be silently reabsorbed into lifestyle spending. If every
+      destination is capped, park the surplus in a labelled unallocated bucket
+      and surface it for a decision.
+  spouse_isolation:
+    default: majority_position
+    wife_income_ownership: exclusive
+    husband_nafkah_reduced_by_wife_income: false
+    voluntary_contribution_label: ianah_or_sadaqah
+    zakat_basis: separate_per_spouse
+    note: >
+      Presented as the majority position. Other arrangements are permissible by
+      mutual consent; where the user reports one, record it as their chosen
+      arrangement rather than correcting it.

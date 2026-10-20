@@ -44,6 +44,7 @@ skill with one next action.
 
 | Skill | Use when |
 |---|---|
+| `sharia-budgeting` | Allocating household income by priority: nafkah, zakat, resilience, investment, infaq, spillover |
 | `sharia-zakat-calc` | Computing zakat on cash, gold, stocks, inventory, receivables |
 | `sharia-contract-review` | Auditing an akad clause by clause |
 | `sharia-bank-product-review` | Verifying a specific bank product's structure and fatwa claim |
@@ -126,7 +127,7 @@ npm run sync:check   # generated references match shared/references
 `check` enforces the contract between skills: every `sharia-*` name mentioned in
 a skill must exist, every `references/...` link must resolve inside that skill,
 every skill must carry the required sections and agent metadata, every analysis
-skill must have a Step 0, and `sharia-ask` must route to all 16 other skills.
+skill must have a Step 0, and `sharia-ask` must route to all 17 other skills.
 
 ## Design rules
 

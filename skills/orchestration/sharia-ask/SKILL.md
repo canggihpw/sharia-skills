@@ -56,6 +56,7 @@ Map the request to one row. If it spans two rows, route in sequence.
 | Building, rebalancing, or checking a portfolio | `sharia-portfolio-construction` |
 | Crypto, a token, staking, or a yield product | `sharia-crypto-token-review` |
 | Zakat, nisab, or whether an asset is zakatable | `sharia-zakat-calc` |
+| Splitting household income: nafkah, zakat, emergency fund, investing | `sharia-budgeting` |
 | A financing, lease, or partnership document | `sharia-contract-review` |
 | A specific bank product or "is this really syariah" | `sharia-bank-product-review` |
 | *Why* something is permissible or not | `sharia-finance-principles` |
@@ -81,6 +82,7 @@ For the routed skill, name what it needs and what is missing:
 | `sharia-portfolio-construction` | mandate, standard, universe, horizon, risk |
 | `sharia-crypto-token-review` | asset, product around it, authority |
 | `sharia-zakat-calc` | assets, liabilities, valuation date, authority |
+| `sharia-budgeting` | income per spouse, dependants, fixed obligations, emergency fund, targets, authority, currency |
 | `sharia-contract-review` | the document |
 | `sharia-bank-product-review` | bank, product, disclosure or akad |
 | `sharia-compliance-report` | screening evidence already produced |
@@ -108,6 +110,9 @@ say which skill you are going to run.
   Neither produces a buy/sell call.
 * **"How much zakat on my stocks?"** needs `sharia-zakat-calc`, not
   `sharia-purification-calc`. They are different obligations.
+* **"How should my family budget the halal way?"** is a household cash-flow
+  question, not a zakat calculation or a portfolio mandate. Route to
+  `sharia-budgeting`.
 * **"Why is this haram?"** is `sharia-finance-principles`, not a screening skill.
 * **A batch of tickers** is `sharia-screening-pipeline`, not repeated manual
   screens.

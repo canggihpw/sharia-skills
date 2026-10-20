@@ -45,6 +45,22 @@ contract type before analysing it, because the compliance test differs per type.
 - **Hiyal** — legal stratagems that reach a prohibited outcome through form.
   Substance over form: if the economic result is a loan, treat it as a loan.
 
+## Household and maintenance obligations
+
+These are not exchange contracts, but they govern how household money is owned
+and allocated. Name them before discussing a family budget.
+
+| Concept | Shape | Core condition | Common failure |
+|---|---|---|---|
+| **Nafkah** | Maintenance owed by the husband to the wife and dependants | Reasonable (ma'ruf) food, housing, clothing, health, and education; the obligation is not reduced by the wife's own income | Treating the wife's salary as replacing the husband's obligation; setting support below ma'ruf |
+| **I'anah / sadaqah** | Voluntary contribution, often the wife's toward household costs | Must remain voluntary and be recorded as such | Presenting it as an obligation, or using it to reduce nafkah |
+| **Infishal al-maliyah** | Separation of the spouses' property | Each spouse owns their income and assets; zakat is computed separately | Merging incomes by default without agreement; treating the wife's wealth as jointly owned |
+| **Syar'i obligations** | Zakat, support for parents, and halal debts | Fixed by the obligation, not by budget preference | Funding lifestyle before these are met |
+
+**Position:** spousal separation is the majority default. Other arrangements are
+permissible by mutual consent; record the arrangement the household actually
+chose rather than correcting it.
+
 ## The audit question
 
 For any product, ask in order:
