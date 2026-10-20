@@ -37,7 +37,7 @@ skill with one next action.
 | `sharia-purification-calc` | Computing the amount to purify from dividends |
 | `sharia-fund-etf-review` | Reviewing a fund, ETF, or reksadana: structure, look-through, purification |
 | `sharia-sukuk-analysis` | Testing a sukuk structure: asset backing, risk transfer, guarantees |
-| `sharia-portfolio-construction` | Building or rebalancing a compliant portfolio |
+| `sharia-portfolio-construction` | Target asset allocation, contribution policy, sleeves, caps, and rebalancing |
 | `sharia-crypto-token-review` | Assessing tokens and crypto products against the actual scholarly divergence |
 
 ### `personal-finance/` — household and product decisions
@@ -110,7 +110,7 @@ Edit the file in `shared/references/`, never the copy.
 | `context-protocol.md` | Web-search rules, freshness windows, jurisdiction resolution, degradation |
 | `jurisdictions/indonesia.md` | OJK, DSN-MUI, DES/ISSI, POJK 8/2025 and 4/2026, crypto, BAZNAS nisab |
 | `jurisdictions/_template.md` | Blank map for adding another country |
-| `thresholds.yaml` | Machine-readable screening thresholds, bases, confidence, zakat defaults |
+| `thresholds.yaml` | Machine-readable screening thresholds, bases, confidence, zakat, budgeting, and allocation defaults |
 | `precedence.md` | Which standard governs when standards disagree |
 | `prohibitions.md` | Riba, gharar, maysir, haram subject matter, operative principles |
 | `contracts.md` | Contract taxonomy and the audit questions per akad |

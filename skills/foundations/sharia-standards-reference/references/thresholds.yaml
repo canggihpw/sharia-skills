@@ -286,3 +286,111 @@ budgeting_defaults:
       Presented as the majority position. Other arrangements are permissible by
       mutual consent; where the user reports one, record it as their chosen
       arrangement rather than correcting it.
+
+allocation_defaults:
+  status: heuristic
+  notice: >
+    Strategic asset allocation starting points, not a fatwa and not a
+    recommendation. Percentages are point targets over total invested wealth
+    and must sum to exactly 100%; tolerance bands are added on top. The user's
+    mandate, horizon, and liquidity needs override these tiers.
+  basis: total_invested_wealth
+  band_method: absolute_pp
+  absolute_band_pp: 0.05
+  relative_band_pct: 0.25
+  note: >
+    Choose one band method and state it. The default is an absolute +/-5
+    percentage points around each target. The relative alternative is +/-25% of
+    the target weight. Do not mix the two in one plan.
+  sleeves:
+    - id: sharia_equities
+      label: Sharia equities / Islamic index ETF
+      role: growth
+      liquidity: daily_to_weekly
+      currency: follows_listing
+      delegates_to:
+        - sharia-fund-etf-review
+        - sharia-stock-screening
+    - id: sukuk
+      label: Sukuk (retail, SNI, PBS, corporate)
+      role: stability_and_income
+      liquidity: hold_to_maturity_or_secondary
+      currency: issuer_currency
+      delegates_to:
+        - sharia-sukuk-analysis
+    - id: sharia_money_market
+      label: Sharia money market / RDPU syariah
+      role: liquidity_and_buffer
+      liquidity: daily
+      currency: fund_currency
+      delegates_to:
+        - sharia-fund-etf-review
+    - id: gold
+      label: Gold (physical or digital)
+      role: inflation_and_geopolitical_hedge
+      liquidity: physical_slower_than_digital
+      currency: commodity
+      delegates_to:
+        - sharia-zakat-calc
+    - id: crypto
+      label: Crypto / BTC
+      role: asymmetric_high_risk_sleeve
+      liquidity: daily_but_volatile
+      currency: usd_quoted
+      delegates_to:
+        - sharia-crypto-token-review
+  tiers:
+    - id: tier_0_pre_investment
+      label: Pre-investment
+      gate: emergency_fund_months_below
+      gate_value: 3
+      targets: null
+      note: Build cash to the 3-month floor first; proposing risk assets before this gate is a defect.
+    - id: tier_1_starter
+      label: Starter
+      keying: horizon_under_5y_or_invested_wealth_under_1x_annual_core_expenses
+      targets:
+        sharia_equities: 0.25
+        sukuk: 0.15
+        sharia_money_market: 0.40
+        gold: 0.15
+        crypto: 0.05
+    - id: tier_2_growth
+      label: Growth
+      keying: horizon_5_to_10y_and_invested_wealth_1x_to_5x_annual_core_expenses
+      targets:
+        sharia_equities: 0.55
+        sukuk: 0.20
+        sharia_money_market: 0.10
+        gold: 0.10
+        crypto: 0.05
+    - id: tier_3_established
+      label: Established
+      keying: horizon_over_10y_and_invested_wealth_over_5x_annual_core_expenses
+      targets:
+        sharia_equities: 0.55
+        sukuk: 0.25
+        sharia_money_market: 0.05
+        gold: 0.10
+        crypto: 0.05
+    - id: tier_4_drawdown
+      label: Drawdown / near retirement
+      keying: withdrawal_or_retirement_within_5y
+      targets:
+        sharia_equities: 0.20
+        sukuk: 0.45
+        sharia_money_market: 0.25
+        gold: 0.10
+        crypto: 0.00
+  caps:
+    single_name_pct: 0.10
+    single_name_excludes: diversified_funds_and_etfs
+    single_sleeve_pct: 0.60
+    crypto_target_pct: 0.05
+    crypto_cap_pct: 0.10
+    crypto_upper_trigger_pct: 0.15
+    note: >
+      Caps are risk controls, not compliance verdicts. The single-name cap
+      applies to individual issuers, not to diversified funds or ETFs. Crypto
+      permissibility is contested and is decided by the crypto skill; this cap
+      only limits damage if it is held.
