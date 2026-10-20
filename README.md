@@ -8,7 +8,7 @@ Every skill takes a **named standard** (AAOIFI, DSN-MUI, SC Malaysia SAC, MSCI I
 
 ```bash
 # from GitHub
-npx skills@latest add <owner>/sharia-skills
+npx skills@latest add canggihpw/sharia-skills
 
 # or locally, before pushing
 npx skills@latest add /path/to/sharia
@@ -115,6 +115,18 @@ Edit the file in `shared/references/`, never the copy.
 | `contracts.md` | Contract taxonomy and the audit questions per akad |
 | `glossary.md` | Terminology across English, Arabic, Indonesian |
 | `output-contract.md` | Verdict vocabulary, required report fields, disclaimer |
+
+## Validation
+
+```bash
+npm run check        # frontmatter, sections, reference links, cross-skill mentions
+npm run sync:check   # generated references match shared/references
+```
+
+`check` enforces the contract between skills: every `sharia-*` name mentioned in
+a skill must exist, every `references/...` link must resolve inside that skill,
+every skill must carry the required sections and agent metadata, every analysis
+skill must have a Step 0, and `sharia-ask` must route to all 16 other skills.
 
 ## Design rules
 

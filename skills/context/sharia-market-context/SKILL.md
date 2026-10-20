@@ -1,7 +1,7 @@
 ---
 name: sharia-market-context
 description: "Use when any sharia analysis or recommendation depends on current conditions — market levels, index constituents, regulator changes, nisab, or the status of a contested asset — searches the web, dates every fact, and produces a context brief."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 

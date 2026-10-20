@@ -1,7 +1,7 @@
 ---
 name: sharia-bank-product-review
 description: "Use when the user asks whether a specific Islamic bank product is genuinely compliant, compares syariah and conventional products, or questions a product's fatwa backing — traces the akad, ownership sequence, fee and penalty treatment, and deposit guarantee mechanics."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -32,6 +32,8 @@ An Islamic bank is an institution; a product is a structure. This skill reviews 
 - `OJK pedoman produk bank syariah <year>`
 
 Products are repriced and restructured. Verify the current version before judging the structure.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Map the product to an akad
 | Product | Typical akad | Watch for |

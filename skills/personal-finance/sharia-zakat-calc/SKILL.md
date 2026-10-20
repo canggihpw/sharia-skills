@@ -1,7 +1,7 @@
 ---
 name: sharia-zakat-calc
 description: "Use when the user asks how much zakat they owe, whether an asset is zakatable, whether nisab is met, or how to value cash, gold, stocks, business inventory, receivables, or long-term debt — produces a reproducible worksheet with the chosen basis."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -32,6 +32,8 @@ Compute zakat on net zakatable wealth: 2.5% after one lunar year, if the base re
 - `<local authority> nisab <year>` if outside Indonesia
 
 Currency nisab is reset annually and gold prices move daily. Never use a figure from a previous year without saying so.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Build the asset base
 | Asset | Zakatable amount |

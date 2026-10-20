@@ -1,7 +1,7 @@
 ---
 name: sharia-crypto-token-review
 description: "Use when the user asks whether crypto is halal, wants a token, exchange, staking product, or yield product reviewed, or needs the genuine range of scholarly positions on digital assets rather than a single ruling."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -33,6 +33,8 @@ The status is moving. Search every time.
 - `<exchange> sharia certification <year>`
 
 If the authority's current position cannot be confirmed, say so and return a range with `questionable`. In Indonesia, do not assume permissiveness.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: State the divergence up front
 | Position | Basis | Consequence |

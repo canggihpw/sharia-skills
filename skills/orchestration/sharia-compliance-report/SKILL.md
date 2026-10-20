@@ -1,7 +1,7 @@
 ---
 name: sharia-compliance-report
 description: "Use when assembling a structured sharia compliance report from screening evidence, or when a verdict must be written up for a client, committee, or file — enforces the standard report envelope with verdict, ratio table, evidence, dissent, purification, and escalation."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -34,6 +34,8 @@ If evidence is incomplete, the report says so in `limits`. It does not fill gaps
 - `<index> today` if the report discusses market conditions
 
 The report's `as_of` must match the evidence. If the context is stale, mark the affected verdicts `questionable` rather than re-dating old data.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Fix the scope
 State what is covered and what is not: subjects, period, standard, data date, and the decision the report supports.

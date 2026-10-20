@@ -1,7 +1,7 @@
 ---
 name: sharia-finance-principles
 description: "Use when explaining why an Islamic finance structure is or is not permissible, when a question spans several contract types, or when another sharia skill needs the underlying fiqh principle before applying a procedure — covers riba, gharar, maysir, risk-return doctrine, and the contract taxonomy."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -41,6 +41,8 @@ Before reasoning about a contested item (crypto, digital gold, tobacco, organise
 - `OJK <topic> <year>`
 
 For settled principles (riba, gharar, maysir) no search is needed. For anything whose permissibility is disputed, it is mandatory.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Name the structure
 Identify the contract or arrangement from its cash flows: who provides capital, who works, who owns the asset, who bears loss, what the return attaches to. Map it to `references/contracts.md`. Most errors come from analysing the marketing label instead of the economics.

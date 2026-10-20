@@ -1,7 +1,7 @@
 ---
 name: sharia-portfolio-construction
 description: "Use when building or rebalancing a sharia-compliant portfolio, choosing between Islamic indices, monitoring screening drift, or aggregating purification across holdings — covers universe definition, weighting, impure income tolerance, and re-screen cadence."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -33,6 +33,8 @@ Turn a set of individually screened names into a system that stays compliant acr
 - `<fund/ETF> holdings <month year>` if using funds
 
 Market conditions decide the **posture**, not the compliance verdict. Record `as_of` for every figure. Without a fresh context, give the framework only — no allocation suggestion.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Write the mandate
 Record in one block: standard, benchmark (ISSI, MSCI Islamic, DJIM, FTSE Shariah, KMI, or none), risk tolerance, horizon, liquidity, purification owner (investor or fund), extra exclusions. This block is the contract for every later decision.

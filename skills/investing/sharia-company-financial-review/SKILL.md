@@ -1,7 +1,7 @@
 ---
 name: sharia-company-financial-review
 description: "Use when extracting or validating the financial inputs behind a sharia screen — interest-bearing debt, interest income, non-permissible revenue, cash and interest-bearing securities, receivables — from an annual report, 10-K, or provider dataset, or when a screening ratio looks wrong and needs evidence."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Turn a financial statement into the small set of numbers a screening needs, each
 - `<ticker> bond prospectus` (for debt detail)
 
 Confirm the filing is the latest published period. If only an older report is available, state the lag and mark the affected ratio.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Fix the period
 All inputs must come from one period. Mixing FY2024 revenue with FY2025 debt is a defect; if unavoidable, say so and mark the affected ratio.

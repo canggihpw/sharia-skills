@@ -1,7 +1,7 @@
 ---
 name: sharia-purification-calc
 description: "Use when the user asks how much to purify, how to compute a purification or cleaning ratio, what to do with impure dividend income, or how to keep a purification ledger for a sharia-compliant holding."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Compute the amount to give away when a compliant holding carries some impure inc
 - `fatwa DSN-MUI 80/2011` (basis: interest income vs non-halal income)
 
 The ratio changes annually. Do not reuse last year's figure. If the fund or issuer does not publish it, return `insufficient_data`.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Fix the basis
 Two common bases:

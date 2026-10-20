@@ -1,7 +1,7 @@
 ---
 name: sharia-sukuk-analysis
 description: "Use when the user asks whether a sukuk is sharia-compliant, needs a sukuk prospectus or term sheet reviewed, or is comparing sukuk to conventional bonds — covers ijarah, musharakah, mudarabah, wakalah, and murabaha structures, asset backing, risk transfer, guarantees, and tradability."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Test whether a sukuk is genuinely ownership in an asset, usufruct, or project, o
 - `<rating agency> <sukuk> <year>`
 
 Confirm the structure has not been amended and the asset pool is current. If the prospectus is unavailable, return `insufficient_data`.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Classify the structure
 | Type | Return source | Key test |

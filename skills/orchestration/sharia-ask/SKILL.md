@@ -1,7 +1,7 @@
 ---
 name: sharia-ask
 description: "Use when the user does not know which sharia skill to use — 'where do I start?', 'what should I do next?', 'is this halal?', or a request that spans several skills. Resolves the jurisdiction, identifies the real intent, and routes to the right skill with one clear next action."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 

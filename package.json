@@ -1,11 +1,12 @@
 {
   "name": "sharia-skills",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "description": "Agent skills for Islamic finance, halal investing, and sharia compliance, installable via `npx skills@latest add <repo>`",
   "scripts": {
     "sync": "bash scripts/sync-references.sh",
-    "sync:check": "bash scripts/sync-references.sh --check"
+    "sync:check": "bash scripts/sync-references.sh --check",
+    "check": "bash scripts/check-skills.sh"
   },
   "license": "MIT"
 }

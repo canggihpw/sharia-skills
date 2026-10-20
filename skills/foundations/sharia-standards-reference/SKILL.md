@@ -1,7 +1,7 @@
 ---
 name: sharia-standards-reference
 description: "Use when choosing which sharia standard governs a screening verdict, comparing thresholds across AAOIFI, DSN-MUI, SC Malaysia SAC, MSCI Islamic, Dow Jones Islamic Market, and FTSE Shariah, or when a report needs a proper citation instead of an assertion."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -34,7 +34,7 @@ Thresholds and editions change. Search before citing, and record `as_of` plus so
 - `AAOIFI standard 21 revision <year>`
 - `<index provider> Islamic index methodology <year>`
 
-Read `references/context-protocol.md`, and `references/jurisdictions/indonesia.md` when the jurisdiction is Indonesia. If the current phase of a transition cannot be confirmed, cap the verdict at `questionable`.
+Read `references/context-protocol.md`, and `references/jurisdictions/indonesia.md` when the jurisdiction is Indonesia. If the current phase of a transition cannot be confirmed, cap the verdict at `questionable`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Determine the governing standard
 Apply precedence in order:
@@ -68,8 +68,8 @@ A governing-standard statement, a comparison table when standards diverge, and o
 
 ```markdown
 Governing standard: DSN-MUI 80/2011 (Indonesian listing, OJK-regulated fund).
-Divergence: the same issuer passes DSN-MUI (debt 41% vs 45%) and fails MSCI (41% vs 33.33%).
-Citation: DSN-MUI 80/2011 art. 4 — interest-based debt / total assets <= 45%
+Divergence: the same issuer passes the current DSN-MUI phase (debt 41% vs 45%) but would fail the 33% target, and fails MSCI (41% vs 33.33%).
+Citation: POJK 8/2025 art. 2 — interest-based debt / total assets <= 45%, phasing to 33%; Fatwa 80/2011 states 45%.
 ```
 
 ## Constraints & Guardrails

@@ -1,7 +1,7 @@
 ---
 name: sharia-stock-screening
 description: "Use when the user asks whether a stock is halal or syariah-compliant, requests a screening of a ticker, asks why a stock is on or off an Islamic index, or needs a compliance verdict on a listed company — applies business-activity exclusions then financial ratio thresholds under a named standard."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -36,6 +36,8 @@ Screening is a snapshot. Search before testing, and record `as_of` plus source f
 - `<ticker> dividend purification <year>`
 
 Never screen from memory of the company's business. If the filing cannot be found, return `insufficient_data`.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Business-activity screen
 1. Determine the **core** business from segment reporting, not the company's one-line description.
@@ -89,11 +91,11 @@ Business activity: telecommunications and data services. No consensus exclusion.
 
 | Test | Value | Threshold | Result | Source |
 |---|---|---|---|---|
-| interest-based debt / total assets | 18.4% | <= 45% | pass | FY2025, note 22 |
-| interest income / total revenue | 2.1% | <= 10% | pass | FY2025, note 8 |
+| interest-based debt / total assets | 18.4% | <= 45% now, 33% target | pass | FY2025, note 22 |
+| non-halal income / total revenue | 2.1% | <= 5% (in force 25 Apr 2026) | pass | FY2025, note 8 |
 
-Verdict: compliant under DSN-MUI.
-Purification: 2.1% of dividends received (interest income basis).
+Verdict: compliant under the current DES criteria.
+Purification: 2.1% of dividends received (non-halal income basis).
 Dissent: none material.
 Escalate: no.
 Limits: no look-through to unconsolidated associates.

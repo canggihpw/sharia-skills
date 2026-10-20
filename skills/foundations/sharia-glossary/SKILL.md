@@ -1,7 +1,7 @@
 ---
 name: sharia-glossary
 description: "Use when a request mixes English, Arabic, and Indonesian Islamic finance terms, when a term is ambiguous (riba, akad, syariah, nisab, purification, sukuk), or when a report needs consistent terminology across sources."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Run a web search when the term refers to a recent product (digital gold, sharia 
 - `"<term>" definisi syariah`
 
 Do not search for settled classical terms; use `references/glossary.md`.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Look up and disambiguate
 For each ambiguous term, state the senses before proceeding. Example: "riba can mean riba al-nasi'ah (deferred increase) or riba al-fadl (unequal exchange); which applies here?"

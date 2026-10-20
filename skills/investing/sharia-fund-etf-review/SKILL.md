@@ -1,7 +1,7 @@
 ---
 name: sharia-fund-etf-review
 description: "Use when the user asks if a mutual fund, ETF, or reksadana is halal, wants a syariah fund or Islamic index ETF checked, or needs a fund compared against its stated screening policy — covers structure, look-through holdings, index methodology, and purification."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -33,6 +33,8 @@ Determine whether a collective investment vehicle is compliant across three dime
 - `fatwa DSN-MUI <fund type> <year>` (e.g. gold ETF: 163/2025)
 
 Holdings and index membership change. State the coverage date and the percentage of NAV examined.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Structure
 * **Leverage** — any borrowing, margin, or leverage reset: flag.

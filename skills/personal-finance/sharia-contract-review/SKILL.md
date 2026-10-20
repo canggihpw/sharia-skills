@@ -1,7 +1,7 @@
 ---
 name: sharia-contract-review
 description: "Use when the user shares a financing, trade, lease, or partnership agreement and asks whether it is sharia-compliant, or wants red flags in an akad — classifies the contract, traces ownership and risk, and flags clauses that convert a compliant structure into a loan."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Read an actual agreement and determine whether its clauses match the akad it cla
 - `OJK pedoman produk bank syariah <year>`
 
 Rules and product versions change; a fatwa may not cover the current document. Record the edition and date.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Classify the contract
 Identify the type(s). If it mixes types, name each leg and analyse them separately — do not treat a hybrid as one akad.

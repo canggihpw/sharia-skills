@@ -1,7 +1,7 @@
 ---
 name: sharia-screening-pipeline
 description: "Use when screening many tickers, funds, or products at once, or when a repeatable screening run is needed across a universe — sequences the foundation, screening, review, and reporting skills and defines batch, caching, and failure handling."
-version: 1.0.0
+version: 1.1.0
 author: Sharia Skills
 ---
 
@@ -31,6 +31,8 @@ Run the whole pack as one repeatable process: establish the standard, gather evi
 - `<regulator> announcement <month year>`
 
 Freeze the run **after** refreshing. A universe pulled from memory invalidates every downstream row.
+
+Freshness limits and jurisdiction resolution: `references/context-protocol.md`. If several current facts are needed at once, load `sharia-market-context`.
 
 ### Step 1: Freeze the run parameters
 ```
@@ -97,7 +99,7 @@ A batch result table plus the assembled report:
 Run: 2026-Q1-issi | Standard: DSN-MUI 80/2011 | Data: FY2025 | 98 subjects
 
 Outcome: 71 compliant, 4 questionable, 21 non-compliant, 2 insufficient data.
-Near-threshold: ANTM (debt 31%), PGAS (income 8.1% vs 10%).
+Near-threshold: ANTM (debt 31% vs 33% phase target), PGAS (non-halal income 4.6% vs 5%).
 Exclusions by reason: conventional finance (14), alcohol (2), insufficient data (2).
 Purification total across compliant holdings: 0.9% of weighted distributions.
 
