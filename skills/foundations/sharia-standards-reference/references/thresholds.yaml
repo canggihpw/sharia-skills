@@ -1,3 +1,5 @@
+# GENERATED FILE — do not edit. Source: shared/references/thresholds.yaml. Run `npm run sync`.
+
 # Shared screening thresholds for the sharia skills pack.
 # This file is the single source of truth. Skills MUST read it rather than
 # restating numbers in prose, so the pack cannot drift into self-contradiction.

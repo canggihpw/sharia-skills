@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/jurisdictions/_template.md. Run `npm run sync`. -->
+
 # <Jurisdiction> — reference template
 
 Copy to `<country>.md` and fill in. Keep the `as_of` date at the top and mark

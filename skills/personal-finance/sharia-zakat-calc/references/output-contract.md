@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/output-contract.md. Run `npm run sync`. -->
+
 # Output contract
 
 All skills in this pack emit the same envelope so results can be aggregated,

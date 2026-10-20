@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/prohibitions.md. Run `npm run sync`. -->
+
 # Core prohibitions and principles
 
 The reasoning frame shared by every skill in this pack. Cite these by name when

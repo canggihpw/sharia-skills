@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/contracts.md. Run `npm run sync`. -->
+
 # Contract taxonomy
 
 Reference sheet for identifying and auditing an akad. Skills should name the

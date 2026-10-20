@@ -90,10 +90,19 @@ scripts/
 The `skills` CLI installs each skill directory individually, so a shared file at the repo root would not travel with an installed skill. `shared/references/` is the single source of truth; `scripts/sync-references.sh` copies it into every skill's `references/` directory.
 
 ```bash
-npm run sync
+npm run sync          # write the copies
+npm run sync:check    # report drift, write nothing (exit 1 on drift)
 ```
 
-Run it after editing anything in `shared/references/`, and commit the result.
+Run `npm run sync` after editing anything in `shared/references/`, and commit the result. `sync:check` catches the two failure modes that matter: a copy edited in place (silently overwritten by the next sync) and a `shared/` change that was never propagated.
+
+Every generated copy carries a header:
+
+```
+# GENERATED FILE — do not edit. Source: shared/references/thresholds.yaml. Run `npm run sync`.
+```
+
+Edit the file in `shared/references/`, never the copy.
 
 | File | Contents |
 |---|---|

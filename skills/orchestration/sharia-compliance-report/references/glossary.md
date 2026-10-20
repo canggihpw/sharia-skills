@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/glossary.md. Run `npm run sync`. -->
+
 # Glossary — English / Arabic / Indonesian
 
 Use these spellings consistently across the pack. When a user's term is

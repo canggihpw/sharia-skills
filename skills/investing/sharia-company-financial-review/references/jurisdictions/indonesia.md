@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/jurisdictions/indonesia.md. Run `npm run sync`. -->
+
 # Indonesia — jurisdiction reference
 
 `as_of: 2026-10-20` · Re-verify anything marked volatile before relying on it.

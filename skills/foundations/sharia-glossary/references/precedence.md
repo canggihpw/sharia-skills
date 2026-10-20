@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/precedence.md. Run `npm run sync`. -->
+
 # Standard selection and precedence
 
 Sharia screening is not one algorithm. The same company can be compliant under

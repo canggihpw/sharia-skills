@@ -1,3 +1,5 @@
+<!-- GENERATED FILE — do not edit. Source: shared/references/context-protocol.md. Run `npm run sync`. -->
+
 # Context protocol — stay current
 
 Every skill in this pack depends on facts that move. Rules are amended, index
