@@ -51,6 +51,12 @@ npx skills@latest add /path/to/sharia
 | `sharia-compliance-report` | Assembling an auditable report from screening evidence |
 | `sharia-screening-pipeline` | Running the pack across a universe with frozen parameters |
 
+### `context/` — staying current
+
+| Skill | Use when |
+|---|---|
+| `sharia-market-context` | Before any verdict or recommendation that depends on current rules, indices, rates, or nisab — searches the web and emits a dated brief |
+
 ## Layout
 
 ```
@@ -64,8 +70,10 @@ skills/
 ├── investing/
 ├── personal-finance/
 ├── orchestration/
+├── context/
 shared/
 └── references/                   # canonical reference files
+    └── jurisdictions/            # per-country regulatory maps
 scripts/
 └── sync-references.sh            # copies shared/references into each skill
 ```
@@ -84,6 +92,9 @@ Run it after editing anything in `shared/references/`, and commit the result.
 
 | File | Contents |
 |---|---|
+| `context-protocol.md` | Web-search rules, freshness windows, jurisdiction resolution, degradation |
+| `jurisdictions/indonesia.md` | OJK, DSN-MUI, DES/ISSI, POJK 8/2025 and 4/2026, crypto, BAZNAS nisab |
+| `jurisdictions/_template.md` | Blank map for adding another country |
 | `thresholds.yaml` | Machine-readable screening thresholds, bases, confidence, zakat defaults |
 | `precedence.md` | Which standard governs when standards disagree |
 | `prohibitions.md` | Riba, gharar, maysir, haram subject matter, operative principles |
@@ -93,11 +104,13 @@ Run it after editing anything in `shared/references/`, and commit the result.
 
 ## Design rules
 
-1. **Standard first.** Every screening skill names the standard, edition, and data date. No silent defaults.
-2. **Substance over form.** A structure is judged by ownership and risk, not by its label.
-3. **Contested means contested.** Where scholars disagree (crypto, tobacco, weapons, organised tawarruq, bay' al-'inah), the skill reports the range and escalates.
-4. **No fatwas.** Every skill is informational screening. A binding ruling belongs to a qualified scholar or an institution's sharia supervisory board.
-5. **Evidence, not memory.** Financial inputs come from filings with a source and period, never from recall.
+1. **Search before you reason.** Every skill starts with a Step 0 that names the web searches to run. Rules are amended, indices are rebalanced, nisab is reset annually, and prices move daily — a skill that answers from training data is confidently wrong. See `shared/references/context-protocol.md`.
+2. **Jurisdiction first.** Screening follows the asset's listing and regulator; zakat and purification follow the investor's residence and chosen authority. When they differ, report both. Load `references/jurisdictions/<country>.md`.
+3. **Standard first.** Every screening skill names the standard, edition, and data date. No silent defaults, and never mix a fatwa value with an operative rule as if they were the same.
+4. **Substance over form.** A structure is judged by ownership and risk, not by its label.
+5. **Contested means contested.** Where scholars disagree (crypto, tobacco, weapons, organised tawarruq, bay' al-'inah), the skill reports the range and escalates.
+6. **No fatwas, no price calls.** Every skill is informational screening. A binding ruling belongs to a qualified scholar; a buy/sell call is not a compliance verdict.
+7. **Evidence, not memory.** Financial inputs come from filings with a source and period, never from recall. Stale data downgrades a verdict to `questionable`.
 
 ## Adding a skill
 

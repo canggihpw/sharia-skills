@@ -22,6 +22,18 @@ Assess a crypto asset or product against the points scholars actually dispute, a
 
 ## Execution Workflow
 
+### Step 0: Refresh the ruling status (web search) — mandatory
+
+The status is moving. Search every time.
+
+- `fatwa DSN-MUI 140/2021 aset kripto`
+- `OJK DSN-MUI crypto status <year>`
+- `MUI ijtima kripto <year>`
+- `<token> sharia review <year>` (for the specific asset)
+- `<exchange> sharia certification <year>`
+
+If the authority's current position cannot be confirmed, say so and return a range with `questionable`. In Indonesia, do not assume permissiveness.
+
 ### Step 1: State the divergence up front
 | Position | Basis | Consequence |
 |---|---|---|
@@ -31,6 +43,8 @@ Assess a crypto asset or product against the points scholars actually dispute, a
 | Permissible with conditions | Accepted asset, activities screened | Token may pass; products may not |
 
 Report which position the user's authority adopts. Do not choose for them.
+
+**Indonesia specifically:** Fatwa 140/DSN-MUI/XI/2021 and the 2021 Ijtima Ulama hold that crypto as currency is haram, and as a commodity is not validly tradable unless it meets sil'ah requirements — physical existence, known quantity, ownership, deliverability, and a clear underlying benefit. OJK's classification work with DSN-MUI was still open in 2026, and the 2021 position remained the government reference. Default to non-compliant in Indonesia, and require the sil'ah test to be evidenced rather than asserted.
 
 ### Step 2: Apply the five tests
 1. **Mal** — identifiable, usable, transferable wealth? Volatility alone is not disqualifying, but extremes raise gharar.

@@ -25,6 +25,18 @@ Produce a defensible compliance verdict on a listed equity: business-activity sc
 
 ## Execution Workflow
 
+### Step 0: Refresh the universe, the rule, and the financials (web search)
+
+Screening is a snapshot. Search before testing, and record `as_of` plus source for each fact.
+
+- `<index> constituents <month year>` or `ISSI terbaru <month year>`
+- `OJK Daftar Efek Syariah <period> <year>`
+- `POJK 8 Tahun 2025 rasio utang berbasis bunga` (current phase)
+- `<ticker> laporan keuangan <year>` or `<ticker> annual report <year>`
+- `<ticker> dividend purification <year>`
+
+Never screen from memory of the company's business. If the filing cannot be found, return `insufficient_data`.
+
 ### Step 1: Business-activity screen
 1. Determine the **core** business from segment reporting, not the company's one-line description.
 2. Compare against the `consensus` exclusion list in `references/thresholds.yaml`. Any material presence is `non_compliant` under every standard in this pack.
@@ -39,6 +51,8 @@ Apply only the ratios of the governing standard. For each, record numerator, den
 2. **Interest / non-permissible income ratio** — interest income plus income from other excluded activities, over total revenue. Search the notes and "other income"; it is rarely on the face of the statement.
 3. **Cash and interest-bearing securities ratio** (where the standard has one) — cash, deposits, money market, conventional bonds.
 4. **Receivables ratio** (DJIM, FTSE) — trade receivables, net.
+
+If the standard is mid-transition, report the fatwa value and the operative value separately. Indonesia is the current example: Fatwa 80/2011 states 45% debt and 10% non-halal income, while POJK 8/2025 sets the non-halal income cap at 5% (in force April 2026) and phases the debt cap from 45% toward 33%. Never present a phased target as the current threshold, and never present the fatwa value as the operative rule.
 
 ### Step 3: Verdict
 | Condition | Verdict |

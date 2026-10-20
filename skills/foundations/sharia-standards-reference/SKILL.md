@@ -24,6 +24,18 @@ Sharia screening is not one algorithm. The same company can be compliant under D
 
 ## Execution Workflow
 
+### Step 0: Refresh the governing rules (web search)
+
+Thresholds and editions change. Search before citing, and record `as_of` plus source.
+
+- `POJK 8 Tahun 2025 rasio utang berbasis bunga Daftar Efek Syariah`
+- `OJK Daftar Efek Syariah terbaru <year>`
+- `fatwa DSN-MUI 80/2011` plus any newer fatwa on equity trading
+- `AAOIFI standard 21 revision <year>`
+- `<index provider> Islamic index methodology <year>`
+
+Read `references/context-protocol.md`, and `references/jurisdictions/indonesia.md` when the jurisdiction is Indonesia. If the current phase of a transition cannot be confirmed, cap the verdict at `questionable`.
+
 ### Step 1: Determine the governing standard
 Apply precedence in order:
 1. Explicit client mandate.
@@ -73,17 +85,17 @@ Citation: DSN-MUI 80/2011 art. 4 — interest-based debt / total assets <= 45%
 ```markdown
 Q: Is TLKM compliant?
 
-Governing standard: DSN-MUI 80/2011 (IDX listing, Indonesian mandate).
+Governing standard: DSN-MUI 80/2011, implemented through the POJK 8/2025 DES criteria (IDX listing, Indonesian mandate).
 Tests applied:
 | Test | Value | Threshold | Result |
 |---|---|---|---|
-| interest-based debt / total assets | 18.4% | <= 45% | pass |
-| interest income / total revenue | 2.1% | <= 10% | pass |
+| interest-based debt / total assets | 18.4% | <= 45%, phasing to 33% | pass |
+| non-halal income / total revenue | 2.1% | <= 5% (in force 25 Apr 2026) | pass |
 Business activity: telecommunications, no excluded core activity. No disputed exposure above threshold.
 
-Verdict: compliant under DSN-MUI. Under MSCI Islamic the debt ratio would also pass (18.4% vs 33.33%), so this result is robust across standards.
+Verdict: compliant under the current DES criteria. Under MSCI Islamic the debt ratio would also pass (18.4% vs 33.33%), so this result is robust across standards.
 
-Citation: DSN-MUI 80/2011 art. 4 — interest-based debt / total assets <= 45%
+Citation: POJK 8/2025 art. 2 — non-halal income / total revenue <= 5%; debt cap 45% with a phased reduction to 33%. Fatwa 80/2011 states 45% and 10% and remains the fiqh basis.
 
 Informational screening, not a fatwa.
 ```

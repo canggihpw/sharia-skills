@@ -27,6 +27,14 @@ If evidence is incomplete, the report says so in `limits`. It does not fill gaps
 
 ## Execution Workflow
 
+### Step 0: Refresh the run context (web search)
+
+- `<index> constituents <month year>`
+- `<regulator> <topic> <year>` for any rule cited
+- `<index> today` if the report discusses market conditions
+
+The report's `as_of` must match the evidence. If the context is stale, mark the affected verdicts `questionable` rather than re-dating old data.
+
 ### Step 1: Fix the scope
 State what is covered and what is not: subjects, period, standard, data date, and the decision the report supports.
 

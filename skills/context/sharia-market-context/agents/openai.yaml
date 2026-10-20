@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Market Context"
+  short_description: "Search the web for current rules, indices, rates, and nisab, then emit a dated context brief."

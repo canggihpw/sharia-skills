@@ -23,6 +23,15 @@ Run the whole pack as one repeatable process: establish the standard, gather evi
 
 ## Execution Workflow
 
+### Step 0: Refresh the universe and the rule (web search)
+
+- `<index> constituents <month year>` or `ISSI terbaru <month year>`
+- `OJK Daftar Efek Syariah <period> <year>`
+- `POJK 8 Tahun 2025` (current ratio phase)
+- `<regulator> announcement <month year>`
+
+Freeze the run **after** refreshing. A universe pulled from memory invalidates every downstream row.
+
 ### Step 1: Freeze the run parameters
 ```
 run_id:       2026-Q1-issi

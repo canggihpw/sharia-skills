@@ -16,6 +16,20 @@ meaningless.
    even when it is looser or tighter than the local standard.
 4. **AAOIFI default.** Use only when nothing above applies, and say so.
 
+## Jurisdiction first
+
+Before choosing a standard, resolve the jurisdiction from
+`references/context-protocol.md`. Screening follows the asset's listing and its
+regulator; personal obligations (zakat, purification destination) follow the
+investor's residence and chosen authority. When the two differ, report both.
+
+Load the jurisdiction reference (`references/jurisdictions/<country>.md`) and
+refresh it by web search before relying on any threshold. Regulatory instruments
+are amended, and "the fatwa says X" is not the same as "the operative rule is X".
+Indonesia is the clearest case: Fatwa 80/2011 still states 45% and 10%, while
+POJK 8/2025 sets a 5% non-halal income cap in force from April 2026 and phases
+the debt cap from 45% toward 33%.
+
 ## Rules
 
 - Never mix ratios from two standards in one verdict.
@@ -26,6 +40,10 @@ meaningless.
   `debt / average market cap` are different tests. State which one you used.
 - If the chosen standard's current edition cannot be confirmed, return
   `questionable`, not a confident verdict.
+- If a rule is mid-transition, report the fatwa value and the operative value
+  separately. Never present a phased target as the current threshold.
+- A local authority's published figure (e.g. BAZNAS nisab) overrides this pack's
+  defaults.
 
 ## Citation format
 

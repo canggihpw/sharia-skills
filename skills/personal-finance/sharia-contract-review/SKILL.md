@@ -23,6 +23,15 @@ Read an actual agreement and determine whether its clauses match the akad it cla
 
 ## Execution Workflow
 
+### Step 0: Refresh the applicable rules (web search)
+
+- `<regulator> <product type> <year>` (e.g. `POJK 4 Tahun 2026 produk investasi perbankan syariah`)
+- `fatwa DSN-MUI <akad> <year>`
+- `<bank> <product> akad`
+- `OJK pedoman produk bank syariah <year>`
+
+Rules and product versions change; a fatwa may not cover the current document. Record the edition and date.
+
 ### Step 1: Classify the contract
 Identify the type(s). If it mixes types, name each leg and analyse them separately — do not treat a hybrid as one akad.
 

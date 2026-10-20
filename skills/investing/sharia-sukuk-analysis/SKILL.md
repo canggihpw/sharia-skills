@@ -23,6 +23,15 @@ Test whether a sukuk is genuinely ownership in an asset, usufruct, or project, o
 
 ## Execution Workflow
 
+### Step 0: Refresh the deal and the rule (web search)
+
+- `<sukuk name> prospectus` or `<sukuk name> rating report`
+- `<issuer> sukuk <year>`
+- `OJK sukuk syariah <year>` or `fatwa DSN-MUI SBSN`
+- `<rating agency> <sukuk> <year>`
+
+Confirm the structure has not been amended and the asset pool is current. If the prospectus is unavailable, return `insufficient_data`.
+
 ### Step 1: Classify the structure
 | Type | Return source | Key test |
 |---|---|---|
@@ -34,6 +43,8 @@ Test whether a sukuk is genuinely ownership in an asset, usufruct, or project, o
 | Murabaha | Deferred sale price | Debt-like; cannot trade at other than par |
 | Salam / istisna | Prepaid or staged purchase | Delivery and specification risk |
 | Hybrid | Combination | Test each leg separately |
+
+Indonesia note: sovereign SBSN structures rest on DSN-MUI fatwas 69, 70, 71, 72 and 76/2008 (ijarah sale and lease back, asset to be leased). Retail series (SR, ST) and institutional series (PBS) use different mechanics — identify which one you are reviewing rather than assuming the fatwa covers it.
 
 ### Step 2: Asset backing and true sale
 * Is there a genuine sale of identifiable assets to the issuer or SPV?

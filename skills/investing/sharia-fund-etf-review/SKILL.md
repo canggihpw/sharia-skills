@@ -23,6 +23,17 @@ Determine whether a collective investment vehicle is compliant across three dime
 
 ## Execution Workflow
 
+### Step 0: Refresh holdings, structure, and policy (web search)
+
+- `<fund> fact sheet <month year>`
+- `<fund> holdings <month year>` or `<fund> annual report`
+- `<fund> prospektus` or `<fund> prospectus`
+- `OJK reksa dana syariah <fund>`
+- `<index> methodology <year>` (if index-tracking)
+- `fatwa DSN-MUI <fund type> <year>` (e.g. gold ETF: 163/2025)
+
+Holdings and index membership change. State the coverage date and the percentage of NAV examined.
+
 ### Step 1: Structure
 * **Leverage** — any borrowing, margin, or leverage reset: flag.
 * **Derivatives** — futures, options, swaps for hedging or enhancement. Majority view restricts them; record what the fund actually does.

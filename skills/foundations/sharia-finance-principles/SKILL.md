@@ -32,6 +32,16 @@ Establish, or explicitly assume:
 
 ## Execution Workflow
 
+### Step 0: Refresh contested-status facts (web search)
+
+Before reasoning about a contested item (crypto, digital gold, tobacco, organised tawarruq), search for the current position rather than relying on training data. Record `as_of` and source.
+
+- `fatwa DSN-MUI <topic> <year>` (Indonesia)
+- `AAOIFI <topic> update`
+- `OJK <topic> <year>`
+
+For settled principles (riba, gharar, maysir) no search is needed. For anything whose permissibility is disputed, it is mandatory.
+
 ### Step 1: Name the structure
 Identify the contract or arrangement from its cash flows: who provides capital, who works, who owns the asset, who bears loss, what the return attaches to. Map it to `references/contracts.md`. Most errors come from analysing the marketing label instead of the economics.
 

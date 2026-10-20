@@ -23,6 +23,16 @@ An Islamic bank is an institution; a product is a structure. This skill reviews 
 
 ## Execution Workflow
 
+### Step 0: Refresh product, rule, and fatwa (web search)
+
+- `<bank> <product> akad`
+- `<bank> <product> brosur <year>` or product disclosure sheet
+- `POJK 4 Tahun 2026` (investment products) and `POJK 11 Tahun 2023` (spin-off)
+- `fatwa DSN-MUI <akad> <year>`
+- `OJK pedoman produk bank syariah <year>`
+
+Products are repriced and restructured. Verify the current version before judging the structure.
+
 ### Step 1: Map the product to an akad
 | Product | Typical akad | Watch for |
 |---|---|---|
@@ -46,6 +56,7 @@ Look for steps skipped on paper but implied by the cash flow. A bank that pays t
 * **Penalty / late fee** — should go to charity. If it accrues to the bank, flag it.
 * **Early settlement** — an `ibra'` rebate is common; an early-payoff charge that functions as interest is not.
 * **Deposit guarantee** — LPS or a state guarantee is a regulatory safety net, not a bank capital guarantee. Do not present it as part of the akad.
+* **Investment-product separation** — Indonesia's POJK 4/2026 (in force 29 April 2026) requires sharia banks to separate investment products from savings, run a suitability assessment, and keep separate management and accounting. A product that commingles funds or skips suitability is non-conforming regardless of its akad.
 
 ### Step 4: Verify the fatwa claim
 * Which body issued it — national fatwa council, the bank's sharia supervisory board, or an internal committee?

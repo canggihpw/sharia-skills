@@ -17,8 +17,9 @@ fi
 count=0
 for skill_md in "$ROOT"/skills/*/*/SKILL.md; do
   skill_dir="$(dirname "$skill_md")"
+  rm -rf "$skill_dir/references"
   mkdir -p "$skill_dir/references"
-  cp "$SRC"/*.md "$SRC"/*.yaml "$skill_dir/references/"
+  cp -R "$SRC"/. "$skill_dir/references/"
   count=$((count + 1))
 done
 

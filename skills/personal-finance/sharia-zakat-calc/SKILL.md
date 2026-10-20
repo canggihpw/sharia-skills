@@ -25,6 +25,14 @@ Compute zakat on net zakatable wealth: 2.5% after one lunar year, if the base re
 
 ## Execution Workflow
 
+### Step 0: Refresh nisab and prices (web search) — mandatory
+
+- `nisab zakat <year> BAZNAS` or `SK Ketua BAZNAS nisab <year>`
+- `harga emas Antam hari ini` or `harga perak hari ini`
+- `<local authority> nisab <year>` if outside Indonesia
+
+Currency nisab is reset annually and gold prices move daily. Never use a figure from a previous year without saying so.
+
 ### Step 1: Build the asset base
 | Asset | Zakatable amount |
 |---|---|
@@ -58,6 +66,8 @@ if net_zakatable >= nisab_value and hawl_complete:
     zakat = net_zakatable * 0.025
 ```
 
+**A local authority's published figure overrides the default.** Indonesia: BAZNAS SK No. 15/2026 sets 85 g gold (14 karat, 2025 average price) = **Rp 91,681,728/year or Rp 7,640,144/month** for zakat on income and services. That is a gold basis, not the silver default — use it for Indonesian users and cite the decision number and year.
+
 ### Step 4: Apply the hawl
 One lunar year (354 days) from the date wealth first reached nisab. Use the lunar year, not 365 days. If wealth drops below nisab mid-year, the hawl restarts under the majority view.
 
@@ -86,6 +96,7 @@ hawl:             complete (since 2025-03-02)
 * DO NOT apply 2.5% to gross income instead of net wealth.
 * DO NOT use an undated nisab or asset price.
 * DO NOT choose silently between gold and silver nisab when the choice changes the answer; show both.
+* DO NOT apply the silver default where the user's authority publishes a gold-based nisab.
 * DO NOT omit the standing disclaimer.
 
 ## Example Output

@@ -23,6 +23,15 @@ Turn a financial statement into the small set of numbers a screening needs, each
 
 ## Execution Workflow
 
+### Step 0: Locate the current filing (web search)
+
+- `<ticker> annual report <year> pdf`
+- `<ticker> laporan keuangan tahunan <year>`
+- `<exchange> financial statements <ticker>`
+- `<ticker> bond prospectus` (for debt detail)
+
+Confirm the filing is the latest published period. If only an older report is available, state the lag and mark the affected ratio.
+
 ### Step 1: Fix the period
 All inputs must come from one period. Mixing FY2024 revenue with FY2025 debt is a defect; if unavoidable, say so and mark the affected ratio.
 

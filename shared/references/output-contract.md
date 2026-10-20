@@ -21,8 +21,10 @@ line item alone without labelling it.
 
 ```
 subject:      what was assessed (ticker, fund, product, contract)
+jurisdiction: resolved jurisdiction, and what it governs here
 standard:     named standard + edition + date verified
 as_of:        date of the underlying financial data
+context:      refreshed facts with dates, or "not required" (see context-protocol)
 verdict:      one of the four above
 ratios:       table of each test: numerator, denominator, value, threshold, pass/fail
 activity:     business-activity screen result and any disputed exposures

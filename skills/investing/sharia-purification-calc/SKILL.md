@@ -23,6 +23,15 @@ Compute the amount to give away when a compliant holding carries some impure inc
 
 ## Execution Workflow
 
+### Step 0: Refresh the ratio and the distribution (web search)
+
+- `<ticker> purification ratio <year>`
+- `<ticker> non-permissible revenue <year>`
+- `<fund> purification policy` or `<fund> laporan tahunan`
+- `fatwa DSN-MUI 80/2011` (basis: interest income vs non-halal income)
+
+The ratio changes annually. Do not reuse last year's figure. If the fund or issuer does not publish it, return `insufficient_data`.
+
 ### Step 1: Fix the basis
 Two common bases:
 * `non_permissible_revenue / total_revenue` — AAOIFI, MSCI, FTSE, DJIM.

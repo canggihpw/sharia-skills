@@ -23,6 +23,17 @@ Turn a set of individually screened names into a system that stays compliant acr
 
 ## Execution Workflow
 
+### Step 0: Refresh market and rules (web search) — mandatory
+
+- `<index> today` or `IHSG hari ini`
+- `MSCI Indonesia consultation update <month year>`
+- `BI rate <month year>`; `10Y INDOGB <month year>`; `USD IDR <date>`
+- `ISSI review <month year>`
+- `POJK 8 Tahun 2025` (DES ratio phase)
+- `<fund/ETF> holdings <month year>` if using funds
+
+Market conditions decide the **posture**, not the compliance verdict. Record `as_of` for every figure. Without a fresh context, give the framework only — no allocation suggestion.
+
 ### Step 1: Write the mandate
 Record in one block: standard, benchmark (ISSI, MSCI Islamic, DJIM, FTSE Shariah, KMI, or none), risk tolerance, horizon, liquidity, purification owner (investor or fund), extra exclusions. This block is the contract for every later decision.
 
@@ -58,6 +69,18 @@ On breach: exit within a defined window and purify income received while holding
 ### Step 7: Handle cash
 Idle cash goes to an Islamic money market instrument or commodity murabaha. If a conventional account is used because no Islamic option exists, state it and purify the interest.
 
+### Step 8: Set the posture from current conditions
+Compliance does not depend on the market. Posture does. After the universe and weights are compliant, add a dated posture note:
+
+* **Index/classification risk** — if the market is under an index-provider review (e.g. MSCI), note the potential forced-flow risk and the decision date. Holdings can be compliant and still be repriced by flows.
+* **Currency** — unhedged exposure with a weak domestic currency changes the real return; sharia-compliant hedging is limited, so size the exposure instead.
+* **Rates** — higher local yields raise the hurdle for equities and make short-duration sukuk a credible cash sleeve.
+* **Liquidity** — in a stressed market, small-cap constituents may not be exitable; cap them.
+* **Valuation** — cheap is not a catalyst. State what would change the picture (reform evidence, flows, earnings) rather than predicting a rebound.
+* **Process** — prefer staged contributions over a single entry when volatility is high; re-screen on schedule regardless of price.
+
+Write the posture as risks and levers, not a price target. If the user asks "should I invest now", answer with the conditions, the risks to their specific plan, and the decisions they control — and say plainly that this is not investment advice.
+
 ## Output
 A portfolio table (name, weight, verdict, standard, data date, purification ratio), a compliance summary (compliant / questionable / non-compliant weights), the rebalance schedule, and the purification ledger format.
 
@@ -69,6 +92,9 @@ A portfolio table (name, weight, verdict, standard, data date, purification rati
 * DO NOT produce a single blended purification ratio that cannot be reproduced from holdings.
 * DO NOT use derivatives for "hedging" without checking the mandate and the standard.
 * DO NOT build the portfolio on an unstated standard.
+* DO NOT convert a market view into a buy/sell call or a price target.
+* DO NOT let a poor market justify holding a non-compliant name "until it recovers".
+* DO NOT quote a market level, yield, or FX rate without a date.
 * DO NOT omit the standing disclaimer.
 
 ## Example Output

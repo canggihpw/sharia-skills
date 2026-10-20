@@ -22,6 +22,16 @@ Keep terminology precise so downstream reasoning is not built on a mistranslatio
 
 ## Execution Workflow
 
+### Step 0: Search only when the term is new or contested
+
+Run a web search when the term refers to a recent product (digital gold, sharia ETF, bullion, tokenised asset) or its status is disputed. Record `as_of` and source.
+
+- `fatwa DSN-MUI <term> <year>`
+- `OJK <term> <year>`
+- `"<term>" definisi syariah`
+
+Do not search for settled classical terms; use `references/glossary.md`.
+
 ### Step 1: Look up and disambiguate
 For each ambiguous term, state the senses before proceeding. Example: "riba can mean riba al-nasi'ah (deferred increase) or riba al-fadl (unequal exchange); which applies here?"
 
