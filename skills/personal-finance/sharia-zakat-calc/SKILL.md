@@ -101,6 +101,14 @@ hawl:             complete (since 2025-03-02)
 * DO NOT apply the silver default where the user's authority publishes a gold-based nisab.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **Qur'an** — 9:60 (recipients), 6:141 (produce), 2:267 (good wealth).
+- **Hadith** — *Sahih al-Bukhari* and *Sahih Muslim*, Kitab al-Zakat, for the nisab reports.
+- **AAOIFI** — SS 35 (Zakah), current edition.
+- **Classical fiqh** — Al-Qaradawi, *Fiqh al-Zakah*; Ibn Qudamah, *Al-Mughni*.
+- **Indonesia** — BAZNAS SK No. 15/2026, plus the current annual nisab decision.
+- Full bibliography and citation rules: `references/sources.md`. A local authority's published nisab overrides the defaults.
+
 ## Example Output
 See the worksheet above, followed by:
 

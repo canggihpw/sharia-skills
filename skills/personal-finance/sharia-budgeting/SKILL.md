@@ -232,6 +232,14 @@ user's authority publishes it.
 * DO NOT choose an authority silently when it changes the floors.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **Qur'an** — 4:34 (qawwam), 4:19 (ma'ruf), 65:7 and 2:233 (maintenance according to means), 17:26–27 (israf), 9:60 (zakat categories).
+- **Hadith** — *Sahih al-Bukhari* and *Sahih Muslim*, chapters on zakat, maintenance, and spending on family.
+- **Classical fiqh** — Al-Shatibi, *Al-Muwafaqat* (maqasid); Ibn Qudamah, *Al-Mughni* (nafkah); Al-Qaradawi, *Fiqh al-Zakah*.
+- **Indonesia** — Kompilasi Hukum Islam (KHI), Buku I Hukum Perkawinan, nafkah provisions; BAZNAS SK No. 15/2026.
+- **Budgeting method** — the household budgeting literature and the dated local benchmark in Step 0; the percentages are heuristic defaults, not rulings.
+- Full bibliography and citation rules: `references/sources.md`.
+
 ## Example Output — illustrative only
 ```markdown
 ## Allocation — Month: October 2026

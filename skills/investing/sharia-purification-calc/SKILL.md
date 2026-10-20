@@ -78,6 +78,14 @@ note:         capital gains not purified under the default position
 * DO NOT call purification zakat.
 * DO NOT emit a number when the ratio or the received amount is unknown; return `insufficient_data`.
 
+## References
+- **AAOIFI** — SS 21 (Financial Paper), current edition, for the impure-revenue basis.
+- **DSN-MUI** — Fatwa No. 80/2011 for the Indonesian income basis.
+- **Index methodologies** — MSCI Islamic, Dow Jones Islamic Market, FTSE Shariah purification formulas.
+- **Zakat distinction** — Al-Qaradawi, *Fiqh al-Zakah*, on zakat and sadaqah as separate obligations.
+- **Primary evidence** — the distribution notice or fund factsheet stating the per-unit ratio.
+- Full bibliography and citation rules: `references/sources.md`. Do not reuse a ratio from a prior year.
+
 ## Example Output
 ```markdown
 Holding: ASII, 1,000 shares

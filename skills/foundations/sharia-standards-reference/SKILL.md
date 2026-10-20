@@ -81,6 +81,14 @@ Citation: POJK 8/2025 art. 2 — interest-based debt / total assets <= 45%, phas
 * DO NOT return `compliant` when the standard's current edition is unverified.
 * DO NOT omit the standing disclaimer in user-facing output.
 
+## References
+- **AAOIFI** — *Shari'ah Standards*, current edition, esp. SS 17 (Investment Sukuk), SS 21 (Financial Paper), SS 35 (Zakah).
+- **DSN-MUI** — fatwa compendium, including No. 80/2011; cite the number and year.
+- **OJK** — POJK 8/2025 and Daftar Efek Syariah decisions.
+- **SC Malaysia SAC** — *Resolutions of the Shariah Advisory Council*.
+- **Index methodologies** — MSCI Islamic Index Series, Dow Jones Islamic Market, FTSE Shariah Global Equity Index Series.
+- Full bibliography and citation rules: `references/sources.md`. Standards are revised; cite the edition and date verified.
+
 ## Example Output
 ```markdown
 Q: Is TLKM compliant?

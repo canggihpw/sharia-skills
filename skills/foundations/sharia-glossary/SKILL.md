@@ -62,6 +62,14 @@ Inline glosses in the user's own text. A glossary section only when explicitly r
 * DO NOT invent transliterations; follow the spellings in `references/glossary.md`.
 * DO NOT let a marketing term ("syariah", "halal investment") pass as a technical classification.
 
+## References
+- **AAOIFI** — *Shari'ah Standards*, current edition, glossary and SS 21, 35.
+- **DSN-MUI** — fatwa compendium for Indonesian usage.
+- **Classical reference** — *Al-Mawsu'ah al-Fiqhiyyah* (Kuwait); Ibn Manzur, *Lisan al-Arab* for Arabic roots.
+- **Modern reference** — Kamali, *Shari'ah Law: An Introduction* (Oneworld, 2008), for legal terminology.
+- **Indonesian usage** — *Kamus Besar Bahasa Indonesia* (KBBI) and OJK/DSN-MUI published terms.
+- Full bibliography and citation rules: `references/sources.md`.
+
 ## Example Output
 ```markdown
 Your request uses "akad" and "contract" interchangeably, but they are not the same thing here.

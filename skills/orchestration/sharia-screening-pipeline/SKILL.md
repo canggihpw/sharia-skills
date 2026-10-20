@@ -94,6 +94,14 @@ A batch result table plus the assembled report:
 * DO NOT report a batch as compliant because the aggregate percentage looks good.
 * DO NOT skip the run record; without it, the next run cannot be diffed.
 
+## References
+- **AAOIFI** — SS 21 (Financial Paper) and SS 27 (Indices), current edition.
+- **DSN-MUI** — Fatwa No. 80/2011; POJK 8/2025 for the operative DES criteria.
+- **Index methodologies** — MSCI Islamic, Dow Jones Islamic Market, FTSE Shariah.
+- **Regulator** — OJK Daftar Efek Syariah and BEI index announcements.
+- **Evidence** — issuer filings for every financial input, with the period stated.
+- Full bibliography and citation rules: `references/sources.md`. Freeze the standard and data date for the whole run.
+
 ## Example Output
 ```markdown
 Run: 2026-Q1-issi | Standard: DSN-MUI 80/2011 | Data: FY2025 | 98 subjects

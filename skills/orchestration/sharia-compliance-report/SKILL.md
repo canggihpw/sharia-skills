@@ -115,5 +115,12 @@ Scope · Standard · Data date · Prepared for
 * DO NOT paraphrase the disclaimer.
 * DO NOT issue the report without the `limits` section.
 
+## References
+- **AAOIFI** — *Shari'ah Standards* and the governance, auditing, and ethics standards, current edition.
+- **IFSB** — *Guiding Principles on Shari'ah Governance Systems* and the *Islamic Financial Services Industry Stability Report*.
+- **Evidence base** — the screening verdicts, financial inputs, and standards cited by the upstream skills.
+- **Reporting contract** — `references/output-contract.md`; `references/sources.md` for the citation hierarchy.
+- Full bibliography and citation rules: `references/sources.md`. A report must show the standard, edition, data date, and source for every input.
+
 ## Example Output
 See the structure above. A complete report always contains all required envelope fields for every subject; a subject with missing fields must be marked `insufficient_data` rather than omitted.

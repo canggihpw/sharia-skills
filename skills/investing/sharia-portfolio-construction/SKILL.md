@@ -288,6 +288,14 @@ the spouse split; and the dated posture note.
 * DO NOT quote a market level, yield, or FX rate without a date.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **AAOIFI** — SS 21 (Financial Paper) and SS 27 (Indices), current edition.
+- **DSN-MUI** — Fatwa No. 80/2011; POJK 8/2025 for the operative DES criteria.
+- **Index methodologies** — MSCI Islamic, Dow Jones Islamic Market, FTSE Shariah.
+- **Portfolio method** — Bodie, Kane, and Marcus, *Investments* (McGraw-Hill, current ed.), for target weights, bands, and contribution policy.
+- **Market context** — `references/context-protocol.md` and the dated sources in `references/jurisdictions/`.
+- Full bibliography and citation rules: `references/sources.md`. Allocation tiers are heuristics, not fatwas.
+
 ## Example Output — illustrative only
 ```markdown
 ## Mandate

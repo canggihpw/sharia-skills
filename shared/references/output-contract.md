@@ -43,6 +43,22 @@ limits:       what this assessment does not cover
 
 State the denominator explicitly. Do not report a ratio as a bare percentage.
 
+## Citations
+
+Every operative fact and every recommendation carries its source in the output.
+Use the hierarchy in `sources.md`:
+
+- **Threshold** — standard, edition, and date verified.
+- **Regulator or fatwa** — instrument number, status, and date.
+- **Market fact** — value, `as_of`, and source.
+- **Religious principle** — verse, or hadith collection and chapter; name the
+  fiqh work where the schools differ.
+- **Heuristic** — label it as heuristic. Never attribute a planning percentage to
+  a scholar, a standard, or a regulator.
+
+If a source cannot be verified, mark it `unverified` and cap the verdict at
+`questionable`.
+
 ## Wording rules
 
 - Attribute thresholds: "under DSN-MUI 80/2011", not "sharia requires".

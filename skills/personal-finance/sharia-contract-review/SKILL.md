@@ -92,6 +92,13 @@ Contract type and parties; a numbered ownership-and-risk timeline; clause-by-cla
 * DO NOT give legal advice. This is a sharia compliance review.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **AAOIFI** — SS 8 (Murabahah), SS 9 (Ijarah and IMBT), SS 10 (Salam), SS 11 (Istisna), SS 12 (Musharakah), SS 13 (Mudarabah), SS 19 (Qard), SS 30 (Tawarruq), SS 39 (Mortgage), SS 49 (Promises), current edition.
+- **DSN-MUI** — fatwa compendium for the relevant akad.
+- **Classical fiqh** — Ibn Rushd, *Bidayat al-Mujtahid*; Ibn Qudamah, *Al-Mughni*; Al-Nawawi, *Al-Majmu'*.
+- **Primary evidence** — the signed contract, annexes, and disclosure documents.
+- Full bibliography and citation rules: `references/sources.md`. Substance over form: test ownership and risk, not the label.
+
 ## Example Output
 ```markdown
 ## Contract: Home financing agreement, Bank A

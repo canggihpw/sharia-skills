@@ -93,6 +93,14 @@ The envelope from `references/output-contract.md`, plus a text structure map (is
 * DO NOT assume a green or sustainability label implies a compliant use of proceeds; screen the projects.
 * DO NOT omit the default and restructuring behaviour — asset-based sukuk often behave like unsecured debt.
 
+## References
+- **AAOIFI** — SS 17 (Investment Sukuk), current edition.
+- **DSN-MUI** — sukuk fatwas including Nos. 69, 70, 71, 72, and 76/2008.
+- **Market data** — IIFM, *Sukuk Report* (annual).
+- **Regulatory** — SC Malaysia SAC resolutions; OJK and BEI sukuk rules where applicable.
+- **Governance** — IFSB guiding principles on sharia governance.
+- Full bibliography and citation rules: `references/sources.md`. Test the structure, not the label.
+
 ## Example Output
 ```markdown
 ## Sukuk: XYZ Ijarah Trust 2029

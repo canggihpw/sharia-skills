@@ -109,6 +109,15 @@ skill, hand the block back so the verdict can cite it.
 * DO NOT recommend a specific security. Give exposure, risk, and process.
 * DO NOT omit the standing disclaimer when the brief feeds a user-facing answer.
 
+## References
+- **OJK** — regulations, Daftar Efek Syariah, and press releases.
+- **BEI / IDX** — index announcements and constituent lists.
+- **Bank Indonesia** — policy rate and sharia liquidity instruments.
+- **BAZNAS** — annual nisab decision, e.g. SK No. 15/2026.
+- **Index providers** — MSCI consultations; FTSE Russell classification notices.
+- **IFSB** — *Islamic Financial Services Industry Stability Report*.
+- Full bibliography and citation rules: `references/sources.md`. Every figure needs an `as_of` date and source.
+
 ## Example Output
 ```markdown
 ## Context brief — Indonesia, equity, 2026-10-20

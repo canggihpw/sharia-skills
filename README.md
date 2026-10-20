@@ -116,6 +116,7 @@ Edit the file in `shared/references/`, never the copy.
 | `contracts.md` | Contract taxonomy and the audit questions per akad |
 | `glossary.md` | Terminology across English, Arabic, Indonesian |
 | `output-contract.md` | Verdict vocabulary, required report fields, disclaimer |
+| `sources.md` | Source hierarchy, citation rules, and the shared bibliography |
 
 ## Validation
 
@@ -137,7 +138,7 @@ skill must have a Step 0, and `sharia-ask` must route to all 17 other skills.
 4. **Substance over form.** A structure is judged by ownership and risk, not by its label.
 5. **Contested means contested.** Where scholars disagree (crypto, tobacco, weapons, organised tawarruq, bay' al-'inah), the skill reports the range and escalates.
 6. **No fatwas, no price calls.** Every skill is informational screening. A binding ruling belongs to a qualified scholar; a buy/sell call is not a compliance verdict.
-7. **Evidence, not memory.** Financial inputs come from filings with a source and period, never from recall. Stale data downgrades a verdict to `questionable`.
+7. **Evidence, not memory.** Financial inputs come from filings with a source and period, never from recall. Stale data downgrades a verdict to `questionable`. Every skill carries a References section, and the shared hierarchy in `shared/references/sources.md` separates primary texts, standards, regulators, and scholarship.
 
 ## Adding a skill
 

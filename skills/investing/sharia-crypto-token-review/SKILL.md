@@ -92,6 +92,14 @@ The envelope from `references/output-contract.md`, with `dissent` filled in subs
 * DO NOT present one scholar's view as consensus.
 * DO NOT answer a request for a religious ruling with a compliance screen; say this is informational and route to a scholar.
 
+## References
+- **DSN-MUI** — Fatwa No. 140/DSN-MUI/XI/2021 and the 2021 Ijtima Ulama.
+- **OJK** — official statements on crypto classification and supervision.
+- **SC Malaysia SAC** — resolutions on digital assets and exchanges.
+- **AAOIFI** — SS 31 (Controls on Gharar) and SS 21 (Financial Paper), applied by analogy; there is no dedicated crypto standard.
+- **Market evidence** — the token's disclosure, custody terms, and on-chain data, dated.
+- Full bibliography and citation rules: `references/sources.md`. Present the range of scholarly positions; do not invent a consensus.
+
 ## Example Output
 ```markdown
 ## Asset: BTC (spot holding)

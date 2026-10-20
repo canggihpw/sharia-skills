@@ -83,6 +83,14 @@ The envelope from `references/output-contract.md`, plus: holdings coverage (% of
 * DO NOT approve a money market fund without checking that the commodity murabaha sequence is genuine and not reversed tawarruq.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **AAOIFI** — SS 21 (Financial Paper) and SS 27 (Indices), current edition.
+- **DSN-MUI** — Fatwa No. 80/2011; POJK 8/2025 for the DES criteria.
+- **OJK** — POJK 4/2026 on sharia banking investment products and the fund's prospectus.
+- **Index methodologies** — MSCI Islamic, Dow Jones Islamic Market, FTSE Shariah.
+- **Primary evidence** — prospectus, factsheet, and published holdings.
+- Full bibliography and citation rules: `references/sources.md`. Re-verify holdings and ratios at the factsheet date.
+
 ## Example Output
 ```markdown
 ## Fund: ABC Islamic Equity ETF (IDX)

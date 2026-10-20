@@ -89,6 +89,14 @@ An input table: value, period, source location, and method (reported / derived /
 * DO NOT issue a verdict; this skill is evidence only.
 * DO NOT reconcile a failed validation by adjusting the number.
 
+## References
+- **Issuer filings** — annual report, 10-K/10-Q, or local equivalent; cite the note and period.
+- **Accounting standards** — IFRS and PSAK (DSAK IAI); AAOIFI accounting standards where the issuer reports under them.
+- **AAOIFI** — SS 21 (Financial Paper) for the ratio definitions.
+- **Method** — Penman, *Financial Statement Analysis and Security Valuation* (McGraw-Hill, current ed.).
+- **Regulator** — OJK / SEC EDGAR filing requirements.
+- Full bibliography and citation rules: `references/sources.md`. Prefer the filed statement over a provider's summary.
+
 ## Example Output
 See the table above, followed by:
 

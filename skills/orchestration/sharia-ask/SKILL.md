@@ -146,6 +146,12 @@ Not investment advice. Informational routing only.
 * DO NOT end with a menu of five options; end with one action.
 * DO NOT let the user believe a compliance verdict is investment advice.
 
+## References
+- **Pack references** — `references/precedence.md` (which standard governs), `references/context-protocol.md` (freshness), and `references/output-contract.md` (reporting).
+- **Routing authorities** — AAOIFI, DSN-MUI, OJK, BEI, BAZNAS, and SC Malaysia SAC, as listed in `references/sources.md`.
+- **Classical and modern scholarship** — the works listed in `references/sources.md`, for distinguishing principle from operative rule.
+- Full bibliography and citation rules: `references/sources.md`. Routing does not itself produce a ruling.
+
 ## Example Output — a vague request
 ```markdown
 ## Where to start

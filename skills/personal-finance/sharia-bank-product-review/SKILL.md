@@ -91,6 +91,14 @@ The envelope from `references/output-contract.md`, plus the ownership timeline, 
 * DO NOT hide a material cost disadvantage — compliance is necessary, not sufficient.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **AAOIFI** — SS 8 (Murabahah), SS 9 (Ijarah and IMBT), SS 19 (Qard), SS 26 (Islamic Insurance), SS 30 (Tawarruq), SS 39 (Mortgage), current edition.
+- **DSN-MUI** — the relevant product fatwa, cited by number and year.
+- **OJK** — POJK 4/2026, POJK 11/2023, and product disclosure requirements.
+- **Primary evidence** — product disclosure sheet, fee schedule, akad, and fatwa reference.
+- **Classical fiqh** — Ibn Qudamah, *Al-Mughni*, for the underlying contract conditions.
+- Full bibliography and citation rules: `references/sources.md`. A DPS opinion binds the bank's governance, not the whole market.
+
 ## Example Output
 ```markdown
 ## Product: Bank A Syariah Home Financing

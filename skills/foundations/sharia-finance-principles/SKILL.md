@@ -86,6 +86,14 @@ A short reasoned answer with:
 * DO NOT issue a fatwa. If the user asks for a religious ruling, say this is informational analysis and direct them to a qualified scholar or the institution's sharia supervisory board.
 * DO NOT omit the standing disclaimer in user-facing output.
 
+## References
+- **Qur'an** — 2:275–279 (riba), 4:29 (mutual consent), 5:90 (maysir), 17:26–27 (israf).
+- **Hadith** — *Sahih Muslim*, Kitab al-Musaqah, riba chapters; *Sahih al-Bukhari*, Kitab al-Buyu'.
+- **Standard** — AAOIFI, *Shari'ah Standards*, current ed., SS 21 (Financial Paper) and SS 31 (Gharar).
+- **Classical fiqh** — Ibn Rushd, *Bidayat al-Mujtahid*; Al-Shatibi, *Al-Muwafaqat*.
+- **Modern scholarship** — Kamali, *Shari'ah Law: An Introduction* (Oneworld, 2008); El-Gamal, *Islamic Finance* (Cambridge, 2006).
+- Full bibliography and citation rules: `references/sources.md`. Verify the current edition before relying on a standard.
+
 ## Example Output
 ```markdown
 Structure: murabaha (cost-plus sale) — financier buys the asset, owns it briefly, sells to the customer at disclosed cost + markup.

@@ -81,6 +81,14 @@ The envelope from `references/output-contract.md`: subject, standard, data date,
 * DO NOT return `compliant` on partial data.
 * DO NOT omit the standing disclaimer.
 
+## References
+- **AAOIFI** — *Shari'ah Standards*, current ed., SS 21 (Financial Paper) and SS 27 (Indices).
+- **DSN-MUI** — Fatwa No. 80/2011 and the operative POJK 8/2025 DES criteria.
+- **OJK** — Daftar Efek Syariah decisions and POJK 8/2025.
+- **Index methodologies** — MSCI Islamic, Dow Jones Islamic Market, FTSE Shariah.
+- **SC Malaysia SAC** — resolutions for Malaysian thresholds.
+- Full bibliography and citation rules: `references/sources.md`. Cite the standard, edition, and data date in every verdict.
+
 ## Example Output
 ```markdown
 ## TLKM — PT Telkom Indonesia (IDX)
