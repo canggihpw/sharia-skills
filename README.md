@@ -16,6 +16,10 @@ npx skills@latest add /path/to/sharia
 
 ## Skills
 
+Not sure which one to use? Start with **`sharia-ask`** — it resolves your
+jurisdiction, works out what you are actually asking, and routes you to one
+skill with one next action.
+
 ### `foundations/` — reasoning substrate
 
 | Skill | Use when |
@@ -44,10 +48,11 @@ npx skills@latest add /path/to/sharia
 | `sharia-contract-review` | Auditing an akad clause by clause |
 | `sharia-bank-product-review` | Verifying a specific bank product's structure and fatwa claim |
 
-### `orchestration/` — multi-subject runs
+### `orchestration/` — routing and multi-subject runs
 
 | Skill | Use when |
 |---|---|
+| `sharia-ask` | **Start here** when unsure: resolves jurisdiction and intent, then routes to one skill |
 | `sharia-compliance-report` | Assembling an auditable report from screening evidence |
 | `sharia-screening-pipeline` | Running the pack across a universe with frozen parameters |
 

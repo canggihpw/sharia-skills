@@ -1,0 +1,3 @@
+interface:
+  display_name: "Sharia Ask"
+  short_description: "Entry point: resolves jurisdiction and intent, then routes to the right sharia skill."
